@@ -11,13 +11,10 @@ public class Main {
         //в формате: «Сумма трат за месяц составила … рублей».
         int [] arr = generateRandomArray();
         int sum = 0;
-        for (int element: arr)
-        {
+        for (int element: arr) {
             sum += element;
         }
-        {
             System.out.println("Cумма трат за месяц составила " + sum + " рублей.");
-        }
 
             // Задание 2
             //Следующая задача — найти минимальную и максимальную трату за день.
@@ -26,14 +23,11 @@ public class Main {
             // … рублей».
             int min = arr[0];
             int max = arr[0];
-            for (int i: arr)
-            {
-                if (i < min)
-                {
+            for (int i: arr) {
+                if (i < min) {
                    min = i;
                 }
-                if (i > max)
-                {
+                else if (i > max) {
                     max = i;
                 }
             }
@@ -46,12 +40,11 @@ public class Main {
             // поделить на количество дней), и вывести в консоль результат в формате: «Средняя сумма трат за месяц
             // составила … рублей».
             //**Важно помнить:** подсчет среднего значения может иметь остаток (то есть быть не целым, а дробным числом).
-            int sum2 = 0;
-            for (double j: arr)
-            {
-                sum2 += j;
+            int sumAvg = 0;
+            for (double j: arr) {
+                sumAvg += j;
             }
-            System.out.println("Cредняя сумма трат за месяц составила " + sum2/30 +  " рублей.");
+            System.out.println("Cредняя сумма трат за месяц составила " + sumAvg/arr.length +  " рублей.");
 
             //Задание 4
             //Отойдем от подсчетов.
@@ -65,8 +58,7 @@ public class Main {
             // **Важно**: не используйте дополнительные массивы для решения этой задачи. Необходимо корректно пройти
             // по массиву циклом и распечатать его элементы в правильном порядке.
             char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-            for (int i=reverseFullName.length-1; i >= 0 ; i--)
-            {
+            for (int i=reverseFullName.length-1; i >= 0 ; i--) {
             System.out.print(reverseFullName[i]);
             }
 
